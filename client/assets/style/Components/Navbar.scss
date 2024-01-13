@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+.navContainer {
+  transition: 0.3s;
+  background-color: #111111;
+  height: 15vh;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  z-index: 6;
+
+
+  .navItemOne {
+    transition: 0.3s;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  .navItemCenter {
+    width: 40%;
+    justify-content: center;
+
+    
+    .navItemCenters {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .inputs {
+      display: none;
+    }
+
+    
+    .welcome {
+      display: none;
+    }
+
+    .classNavItemCenter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      background-color: #111111;
+      position: absolute;
+      bottom: 60px;
+      width: 60px;
+      height: 60px;
+      border-radius: 60px;
+      border: 1px solid white;
+      transition: 0.3s;
+    }
+    
+    .btnSendApplication {
+      display: none;
+    }
+  }
+
+  .navItemTwo {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  .link {
+
+    .linkImg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.navContainerActice {
+  transition: 0.3s;
+  position: absolute;
+  height: 100vh;
+  background-color: #111111;
+  z-index: 6;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+
+ 
+
+  .navItemOneActive {
+    transition: 0.3s;
+    display: none;
+  }
+
+  .navItemCenterActive {
+    width: 100%;
+    justify-content: center;
+
+    .navItemCenterActives {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .welcomeActive {
+      width: 80%;
+      height: 10vh;
+      background-color: rgba(255, 0, 0, 0);
+      margin-top: 20px;
+
+      .welcomeTextActive {
+        color: white;
+        font-size: 18px;
+        font-family: 'Noto Sans', sans-serif;
+      }
+    }
+
+    .inputsActive {
+
+      .inputPole {
+        background-color: #111111;
+        border: 1px solid white;
+        outline: none;
+        height: 30px;
+        margin-left: 23px;
+        margin-top: 15px;
+        padding-left: 10px;
+        width: 85%;
+        border-radius: 5px;
+        color: white;
+      }
+    }
+
+    .classNavItemCentercActive {
+      transition: 0.3s;
+      border: none;
+      background-color: #ff000000;
+      width: 30px;
+      height: 30px;
+      border-radius: 60px;
+      border: none;
+      transform: rotate(45deg);
+      margin-top: 20px;
+
+      .linkdImg {
+        width: 30px;
+      }
+    }
+
+    .btnSendApplicationActive {
+      .btnSendApplicationBTN {
+        margin-top: 20px;
+        margin-left: 23px;
+        height: 40px;
+        width: 85%;
+        background-color: #6658d3;
+        border: 1px solid #6658d3;
+        border-radius: 5px;
+        color: #000000;
+      }
+    }
+  }
+
+  .navItemTwoActive {
+    transition: 0.3s;
+    display: none;
+  }
+}
