@@ -57,25 +57,25 @@ export default ({ }) => {
         </div>
 
         <div className={!create ? "inputs" : "inputsActive"}>
-          <div class="input">
+          <div className="input">
             <input type="text" class="input-field" style={{ width: "85%", marginLeft: "6%", color: "white" }} required />
             <label class="input-label" style={{ width: "85%", marginLeft: "6%" }}>Название карточки</label>
           </div>
           <div class="input">
             <input type="text" class="input-field" style={{ width: "85%", marginLeft: "6%", color: "white" }} required />
-            <label class="input-label" style={{ width: "85%", marginLeft: "6%" }}>Цена</label>
+            <label className="input-label" style={{ width: "85%", marginLeft: "6%" }}>Цена</label>
           </div>
-          <div class="input">
-            <input type="text" class="input-field" style={{ width: "85%", marginLeft: "6%", color: "white" }} required />
-            <label class="input-label" style={{ width: "85%", marginLeft: "6%" }}>Ник в телеграм</label>
+          <div className="input">
+            <input type="text" className="input-field" style={{ width: "85%", marginLeft: "6%", color: "white" }} required />
+            <label className="input-label" style={{ width: "85%", marginLeft: "6%" }}>Ник в телеграм</label>
           </div>
-          <div class="input">
-            <input type="text" class="input-field" style={{ width: "85%", marginLeft: "6%", color: "white" }} required />
-            <label class="input-label" style={{ width: "85%", marginLeft: "6%" }}>Сложность</label>
+          <div className="input">
+            <input type="text" className="input-field" style={{ width: "85%", marginLeft: "6%", color: "white" }} required />
+            <label className="input-label" style={{ width: "85%", marginLeft: "6%" }}>Сложность</label>
           </div>
-          <div class="input">
-            <input type="text" class="input-field" style={{ width: "85%", marginLeft: "6%", color: "white" }} required />
-            <label class="input-label" style={{ width: "85%", marginLeft: "6%" }}>Статус</label>
+          <div className="input">
+            <input type="text" className="input-field" style={{ width: "85%", marginLeft: "6%", color: "white" }} required />
+            <label className="input-label" style={{ width: "85%", marginLeft: "6%" }}>Статус</label>
           </div>
         </div>
         <div className={!create ? "btnSendApplication" : "btnSendApplicationActive"}>
