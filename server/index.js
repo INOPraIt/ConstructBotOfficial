@@ -17,7 +17,7 @@ app.use(errorMiddleware);
 
 const start = async () => {
   try {
-    await mongoose.connect('mongodb://127.0.0.1:27017/bottelegram', { 
+    await mongoose.connect('mongodb://127.0.0.1:27017/newAppNewIndex', { 
       useNewUrlParser: true, 
       useUnifiedTopology: true 
     });
