@@ -1,0 +1,21 @@
+.containerHome {
+	display: flex;
+
+
+	.sidebarHome {
+		width: 20%;
+		background-color: rgba(255, 0, 0, 0);
+		height: 100vh;
+	}
+
+	.blockCenterHome {
+		width: 60%;
+		height: 100vh;
+	}
+
+	.blockGroupHome {
+		width: 20%;
+		background-color: aqua;
+		height: 100vh;
+	}
+}
