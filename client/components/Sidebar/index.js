@@ -3,6 +3,8 @@ import logo from '../../assets/img/logo.png';
 import './style.scss';
 import menu from '../../assets/img/icons/menuIcon.png';
 import Links from '../Links';
+import { linksArr } from './linksArr';
+import LinksExplore from '../LinksExplore';
 
 export default () => {
 	return (
@@ -18,7 +20,8 @@ export default () => {
 				<Links />
 			</div>
 			<div className='blockExplore'>
-				<p>Explore</p>
+				<p className='headerExplore'>Explore</p>
+				<LinksExplore />
 			</div>
 		</div>
 	)
