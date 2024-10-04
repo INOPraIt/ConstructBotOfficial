@@ -35,15 +35,15 @@ export default () => {
       <div className='itemTwo'>
         <h1 className='headerCreateAccount'>We are glad to see you</h1>
         <p className='textCreateAccount'>Login your accaunt now</p>
-        <div class="col-3 input-effect">
-          <input class="effect-18" type="text" placeholder="" />
+        <div className="col-3 input-effect">
+          <input className="effect-18" type="text" placeholder="" />
           <label>Email</label>
-          <span class="focus-border"></span>
+          <span className="focus-border"></span>
         </div>
-        <div class="col-3 input-effect">
-          <input class="effect-18" type="text" placeholder="" />
+        <div className="col-3 input-effect">
+          <input className="effect-18" type="text" placeholder="" />
           <label>Password</label>
-          <span class="focus-border"></span>
+          <span className="focus-border"></span>
         </div>
         <button className='btnreg'>Login</button>
         <p className='noAccauntText'>

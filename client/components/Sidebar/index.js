@@ -23,6 +23,12 @@ export default () => {
 				<p className='headerExplore'>Explore</p>
 				<LinksExplore />
 			</div>
+			<div className='innovationBlock'>
+				<p className='headerInnovation'>Innovation interface</p>
+				<button className='editingTheSpace'>
+					Editing the space
+				</button>
+			</div>
 		</div>
 	)
 }

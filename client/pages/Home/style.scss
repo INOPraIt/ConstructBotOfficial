@@ -16,8 +16,23 @@
 		background-color: rgb(245, 246, 247);
 		display: flex;
 
+		// scrollbar ItemLeftHome
+
+		.itemLeftHome::-webkit-scrollbar {
+			width: 4px;
+		}
+		.itemLeftHome::-webkit-scrollbar-track {
+			background: rgba(255, 166, 0, 0);
+		}
+		.itemLeftHome::-webkit-scrollbar-thumb {
+			background-color: rgb(228, 228, 228);
+			border-radius: 20px;
+			border: 3px solid rgba(255, 166, 0, 0);
+		}
+
 		.itemLeftHome {
 			width: 70%;
+			overflow: scroll;
 
 			.itemNewPost {
 				display: flex;
@@ -64,159 +79,54 @@
 					}
 				}
 			}
-
-			.itemPostDone {
-				width: 90%;
-				background-color: rgb(255, 255, 255);
-				margin-left: 5%;
-				height: 600px;
-				margin-top: 30px;
-				border-radius: 15px;
-				border: 1px solid rgb(218, 218, 218);
-
-				.avatarAndInfoItemPostDone {
-					display: flex;
-					width: 100%;
-
-					.avatarItemPostDone {
-						width: 50px;
-						height: 50px;
-						border-radius: 50px;
-						margin-left: 5%;
-						margin-top: 20px;
-					}
-
-					.infoItemPostDone {
-						margin-top: 20px;
-						margin-left: 10px;
-
-						.namedAuthorItemPostDone {
-							font-family: "Work Sans", sans-serif;
-							font-optical-sizing: auto;
-							font-weight: 500;
-							font-style: normal;
-							font-size: 20px;
-						}
-
-						.locationsAuthorItemPostDone {
-							font-family: "Work Sans", sans-serif;
-							font-optical-sizing: auto;
-							font-weight: 300;
-							font-style: normal;
-						}
-					}
-				}
-
-				.textItemPostDone {
-					width: 100%;
-
-					.textPostItemPostDone {
-						width: 90%;
-						margin-left: 5%;
-						margin-top: 20px;
-						font-family: "Work Sans", sans-serif;
-						font-optical-sizing: auto;
-						font-weight: 400;
-						font-style: normal;
-					}
-				}
-
-				.fotoPostDone {
-					width: 100%;
-					display: flex;
-
-					.igmOnePostDone {
-						width: 44%;
-						margin-left: 5%;
-						border-radius: 10px 0 0 10px;
-						margin-top: 20px;
-						cursor: pointer;
-					}
-
-					.igmTwoPostDone {
-						width: 44%;
-						margin-left: 2%;
-						border-radius: 0px 10px 10px 0px;
-						margin-top: 20px;
-						margin-right: 5%;
-						cursor: pointer;
-					}
-				}
-
-				.lineStylePostDone {
-					border: none;
-					height: 1px;
-					background-color: rgb(218, 218, 218);
-					margin-top: 20px;
-					width: 90%;
-					margin-left: 5%;
-				}
-
-				.lineStylePostDoneTwo {
-					border: none;
-					height: 1px;
-					background-color: rgb(218, 218, 218);
-					margin-top: 10px;
-					width: 90%;
-					margin-left: 5%;
-				}
-
-				.btnsItemPostDone {
-					display: flex;
-					width: 100%;
-
-					.btnsOneItemPostDone {
-						margin-left: 5%;
-						background-color: rgba(255, 0, 0, 0);
-						width: 75%;
-
-						.btnLikePostDone {
-							width: 25px;
-							height: 25px;
-							padding-left: 20px;
-							margin-top: 10px;
-							cursor: pointer;
-						}
-					}
-
-					.btnsTwoItemPostDone {
-						background-color: rgba(21, 255, 0, 0);
-						width: 15%;
-						display: flex;
-						.btnLikePostDone {
-							width: 25px;
-							height: 25px;
-							padding-left: 20px;
-							margin-top: 10px;
-							cursor: pointer;
-						}
-					}
-				}
-
-				.addedComentsItemPostDone {
-					width: 100%;
-					
-					.likesCommentRepostTextItemPostDone {
-						display: flex;
-
-						.likes {
-							margin-left: 5%;
-						}
-
-						.comments {
-							margin-left: 55%;
-						}
-
-						.reposts {
-							margin-left: 5%;
-						}
-					}
-				}
-			}
 		}
 
 		.itemRightHome {
 			width: 30%;
+
+			.itemUpcomingEventsActive {
+				// animation: shake 1s infinite;
+				display: flex;
+				flex-direction: column;
+				width: 90%;
+				background-color: rgb(255, 255, 255);
+				height: 50px;
+				margin-top: 50px;
+				border-radius: 15px;
+				border: 1px solid rgb(218, 218, 218);
+				height: 400px;
+				.upBlockUpcomingEvents {
+					height: 60px;
+					background-color: rgba(255, 0, 0, 0);
+					display: flex;
+					align-items: center;
+
+				.headerUpcomingEvents {
+					font-family: "Work Sans", sans-serif;
+					font-optical-sizing: auto;
+					font-weight: 500;
+					font-style: normal;
+					font-size: 23px;
+					margin-left: 15px;
+				}}
+
+				.activeButton {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin-top: -50px;
+					margin-left: -10px;
+					border-radius: 30px;
+					border: none;
+					width: 25px;
+					cursor: pointer;
+					background-color: rgb(216, 216, 216);
+
+					.crossIconActiveButton { 
+						width: 90%;
+					}
+				}
+			}
 
 			.itemUpcomingEvents {
 				display: flex;
@@ -234,6 +144,10 @@
 					background-color: rgba(255, 0, 0, 0);
 					display: flex;
 					align-items: center;
+
+					.activeButton {
+						display: none;
+					}
 
 					.headerUpcomingEvents {
 						font-family: "Work Sans", sans-serif;
@@ -260,10 +174,86 @@
 					}
 
 				}
+
 				.lineStyle {
 					border: none;
 					height: 1px;
 					background-color: rgb(218, 218, 218);
+				}
+
+				.containerCardAcquaintances {
+					overflow: scroll;
+				}
+			}
+
+			@keyframes shake {
+				0%, 100% { transform: rotate(1deg); }
+				20% { transform: rotate(-1deg); }
+				30% { transform: rotate(1deg); }
+				40% { transform: rotate(-1deg); }
+				50% { transform: rotate(1deg); }
+				60% { transform: rotate(-1deg); }
+				80% { transform: rotate(1deg); }
+				90% { transform: rotate(-1deg); }
+		}
+
+			// scroll style itemUpcomingEvents
+			.containerCardAcquaintances::-webkit-scrollbar {
+				width: 1px;
+			}
+			.containerCardAcquaintances::-webkit-scrollbar-track {
+				background: rgba(255, 166, 0, 0);  
+			}
+			.containerCardAcquaintances::-webkit-scrollbar-thumb {
+				background-color: rgb(231, 231, 231);
+				border-radius: 20px;
+			}
+
+			.itemVisit {
+				display: flex;
+				flex-direction: column;
+				width: 90%;
+				background-color: rgb(255, 255, 255);
+				margin-top: 20px;
+				border-radius: 15px;
+				border: 1px solid rgb(218, 218, 218);
+				height: 400px;
+
+				.headerItemVisit {
+
+					.headerItemVisitText {
+						font-family: "Work Sans", sans-serif;
+						font-optical-sizing: auto;
+						font-weight: 500;
+						font-style: normal;
+						font-size: 20px;
+						margin-left: 15px;
+						margin-top: 10px;
+					}
+
+					.lineStyleItemVisit {
+						border: none;
+						height: 1px;
+						background-color: rgb(218, 218, 218);
+						margin-top: 10px;
+					}
+
+					.integrationImage {
+						width: 90%;
+						margin-left: 5%;
+						margin-top: 5%;
+					}
+
+					.linkVisitIntegration {
+						color: black;
+						font-family: "Work Sans", sans-serif;
+						font-optical-sizing: auto;
+						font-weight: 400;
+						font-style: normal;
+						font-size: 15px;
+						margin-left: 5%;
+						margin-top: 5%;
+					}
 				}
 			}
 		}
@@ -271,7 +261,15 @@
 
 	.blockGroupHome {
 		width: 20%;
-		background-color: aqua;
+		background-color: rgba(0, 255, 255, 0);
 		height: 100vh;
+		.cardGroupContainer {
+			width: 94%;
+			background-color: rgba(255, 0, 0, 0);
+			margin-left: 3%;
+			margin-top: 50px;
+			height: 80vh;
+			border-radius: 15px;
+		}		
 	}
 }
