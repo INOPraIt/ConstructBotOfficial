@@ -85,7 +85,7 @@
 			width: 30%;
 
 			.itemUpcomingEventsActive {
-				// animation: shake 1s infinite;
+				animation: shake 1s infinite;
 				display: flex;
 				flex-direction: column;
 				width: 90%;
@@ -111,6 +111,7 @@
 				}}
 
 				.activeButton {
+					transition: 0.5s;
 					display: flex;
 					justify-content: center;
 					align-items: center;
@@ -126,6 +127,14 @@
 						width: 90%;
 					}
 				}
+			}
+
+			.itemUpcomingEventsBlock {
+				display: block;
+			}
+
+			.itemUpcomingEventsBlockActive {
+				display: none;
 			}
 
 			.itemUpcomingEvents {
@@ -150,6 +159,7 @@
 					}
 
 					.headerUpcomingEvents {
+						transition: 0.5s;
 						font-family: "Work Sans", sans-serif;
 						font-optical-sizing: auto;
 						font-weight: 500;

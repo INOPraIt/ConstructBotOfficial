@@ -18,10 +18,16 @@ export default () => {
     { id: 4, number: 'four' },
   ]
 
+  const [edditSpace, setEdditSpace] = React.useState(false);
+  const [deletedBlock, setDeletedBlock] = React.useState(false);
+
   return (
     <div className='containerHome'>
       <div className='sidebarHome'>
-        <Sidebar />
+        <Sidebar
+          setEdditSpace={setEdditSpace}
+          edditSpace={edditSpace}
+        />
       </div>
       <div className='blockCenterHome'>
         <div className='itemLeftHome'>
@@ -43,37 +49,42 @@ export default () => {
           )}
         </div>
         <div className='itemRightHome'>
-          <div className='itemUpcomingEvents'>
-            <div className='upBlockUpcomingEvents'>
-              <button className='activeButton'>
-                <img 
-                  className='crossIconActiveButton'
-                  src={minus}
-                />
-              </button>
-              <p className='headerUpcomingEvents'>Acquaintances</p>
+          <div className={!deletedBlock ? "itemUpcomingEventsBlock" : "itemUpcomingEventsBlockActive"}>
+            <div className={!edditSpace ? "itemUpcomingEvents" : "itemUpcomingEventsActive"}>
+              <div className='upBlockUpcomingEvents'>
+                <button
+                  className='activeButton'
+                  onClick={() => setDeletedBlock(!deletedBlock)}
+                >
+                  <img
+                    className='crossIconActiveButton'
+                    src={minus}
+                  />
+                </button>
+                <p className='headerUpcomingEvents'>Acquaintances</p>
+              </div>
+              <hr className='lineStyle' />
+              <div className='containerCardAcquaintances'>
+                <CardAcquaintances />
+                <CardAcquaintances />
+                <CardAcquaintances />
+              </div>
+
             </div>
-            <hr className='lineStyle' />
-            <div className='containerCardAcquaintances'>
-              <CardAcquaintances />
-              <CardAcquaintances />
-              <CardAcquaintances />
-            </div>
-            
           </div>
           <div className='itemVisit'>
             <div className='headerItemVisit'>
               <p className='headerItemVisitText'>Don't forget to visit</p>
               <hr className='lineStyleItemVisit' />
-              <img 
-                className='integrationImage' 
+              <img
+                className='integrationImage'
                 src={'https://avatars.mds.yandex.net/i?id=dce0aa850adf7285f01157bf473eb123_l-5009205-images-thumbs&n=13'}
               />
-              <a 
+              <a
                 className='linkVisitIntegration'
                 href="http://nike.com/"
-                >
-                  Visit integration
+              >
+                Visit integration
               </a>
             </div>
           </div>

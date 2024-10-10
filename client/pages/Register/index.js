@@ -2,30 +2,44 @@ import React from 'react';
 import './style.scss';
 import SliderRegister from '../../components/SliderRegister';
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { connect } from 'react-redux';
-import { createUser } from '../../store/actions/user.actions';
+import { createUser, changeUserFieldAction } from '../../store/actions/user.actions';
+import {ToastContainer, toast} from 'react-toastify';
 
 export default connect((s) => ({
-  user: s.user
+  user: s.user,
+  isRegitered: s.user.registred
 }), {
-  createUser
+  createUser,
+  changeUserFieldAction
 })(
   ({
-    createUser
+    createUser,
+    isRegitered,
+    changeUserFieldAction
   }) => {
 
     const [fullname, setFullname] = React.useState('');
     const [email, setEmail] = React.useState('');
     const [password, setPassword] = React.useState('');
 
+    let navigate = useNavigate()
+
     function registerUser() {
       createUser({
-        fullname: fullname, 
-        email: email, 
-        password: password
+        fullname: fullname,
+        email: email,
+        password: passwordq
       })
     }
+
+    React.useEffect(() => {
+      if (isRegitered) {
+        navigate("/");
+      }
+      if (isRegitered !== null) changeUserFieldAction({name: "registred", value: null})
+    }, [isRegitered])
 
     return (
       <div className='conatinerReg'>
@@ -99,6 +113,19 @@ export default connect((s) => ({
             Have an account? <Link className='linkSign' to='/'>Login</Link>
           </p>
         </div>
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+        />
+        <ToastContainer />
       </div>
     )
   }

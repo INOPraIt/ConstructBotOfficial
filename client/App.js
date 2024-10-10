@@ -6,6 +6,7 @@ import Register from './pages/Register';
 
 export default () => {
   return (
+      
     <div>
       <Routes>
         <Route path="/" element={<Login />} />

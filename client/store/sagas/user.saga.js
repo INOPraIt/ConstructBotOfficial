@@ -1,7 +1,10 @@
 import { takeEvery } from 'redux-saga/effects';
 import { bindAsyncActions } from '../../utils/store/helpers';
 import {
-  createUser, createUserAsync
+  createUser, 
+  createUserAsync,
+  changeUserFieldAction,
+  changeUserFieldActionAsync
 } from '../actions/user.actions.js';
 import UserApi from '../../services/api/user';
 
@@ -9,6 +12,11 @@ function plugeWorker() {
   return true;
 }
 
+function changeUserFieldWorker({ name, value }) {
+  return { name, value }
+}
+
 export function* userSaga() {
-  yield takeEvery(createUser, bindAsyncActions(createUserAsync)(UserApi.createUser))
+  yield takeEvery(createUser, bindAsyncActions(createUserAsync)(UserApi.createUser));
+  yield takeEvery(changeUserFieldAction, bindAsyncActions(changeUserFieldActionAsync)(changeUserFieldWorker))
 }

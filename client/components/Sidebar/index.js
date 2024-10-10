@@ -6,8 +6,10 @@ import Links from '../Links';
 import { linksArr } from './linksArr';
 import LinksExplore from '../LinksExplore';
 
-export default () => {
+export default ({edditSpace, setEdditSpace}) => {
 	return (
+
+		
 		<div className='containerSidebar'>
 			<div className='blockLogo'>
 				<img src={logo} className='logoImg'/>
@@ -25,7 +27,10 @@ export default () => {
 			</div>
 			<div className='innovationBlock'>
 				<p className='headerInnovation'>Innovation interface</p>
-				<button className='editingTheSpace'>
+				<button 
+					className='editingTheSpace'
+					onClick={() => setEdditSpace(!edditSpace)}
+					>
 					Editing the space
 				</button>
 			</div>
