@@ -1,0 +1,23 @@
+.containerChat {
+	display: flex;
+
+  .sidebarChat {
+    width: 20%;
+		background-color: rgba(255, 0, 0, 0);
+		height: 100vh;
+  }
+
+  .centerBlockChat {
+    width: 20%;
+    height: 100vh;
+    background-color: red;
+
+    .btnNewMessage {
+
+    }
+
+    .settingsChat {
+      
+    }
+  }
+}

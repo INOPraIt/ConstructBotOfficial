@@ -25,7 +25,11 @@ class UserController {
     try {
       const { email, password } = req.body;
       const userData = await userService.login(email, password);
-      res.cookie('Login user success')
+      res.cookie('Login user success');
+      const success = {
+        loginedUser: true
+      }
+      res.cookie({'Logined user': success})
       return res.json(userData);
     } catch (e) {
       next(e);

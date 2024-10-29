@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import { linksExloreArr } from '../Sidebar/linksArr';
 import message from '../../assets/img/icons/SidebarIcons/UnActive/message.png';
+import './style.scss'; 
 
 export default () => {
   return (

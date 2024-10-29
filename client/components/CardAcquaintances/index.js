@@ -7,7 +7,7 @@ export default () => {
         <div className='imgAvatarAcquaintances'>
           <img 
             className='imgAvatarAcquaintancesImage'
-            scr={'https://steamuserimages-a.akamaihd.net/ugc/1765994827416000637/63A0D41C227CF7F5F0FCFE22185039E08B0D6D1A/?imw=512&amp;imh=512&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true'}/>
+            scr={'https://i.pinimg.com/originals/af/39/53/af39535d8218bbcdd1ee52b6b7f803e5.jpg'}/>
         </div>
         <div>
           <p className='headerTextAcquaintancesCard'>Cris</p>

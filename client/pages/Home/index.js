@@ -10,7 +10,6 @@ import CardGroup from '../../components/CardGroup';
 import CardAcquaintances from '../../components/CardAcquaintances';
 
 export default () => {
-
   const posts = [
     { id: 1, number: 'one' },
     { id: 2, number: 'two' },
@@ -69,7 +68,6 @@ export default () => {
                 <CardAcquaintances />
                 <CardAcquaintances />
               </div>
-
             </div>
           </div>
           <div className='itemVisit'>
@@ -87,7 +85,7 @@ export default () => {
                 Visit integration
               </a>
             </div>
-          </div>
+          </div> 
         </div>
       </div>
       <div className='blockGroupHome'>

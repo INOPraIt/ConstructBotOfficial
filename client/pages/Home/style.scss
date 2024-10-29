@@ -25,7 +25,7 @@
 			background: rgba(255, 166, 0, 0);
 		}
 		.itemLeftHome::-webkit-scrollbar-thumb {
-			background-color: rgb(228, 228, 228);
+			background-color: rgba(228, 228, 228, 0);
 			border-radius: 20px;
 			border: 3px solid rgba(255, 166, 0, 0);
 		}
@@ -39,15 +39,15 @@
 				width: 90%;
 				background-color: rgb(255, 255, 255);
 				margin-left: 5%;
-				height: 50px;
-				margin-top: 50px;
+				height: 40px;
+				margin-top: 25px;
 				border-radius: 15px;
 				border: 1px solid rgb(218, 218, 218);
 
 				.avatarItemNewPost {
 					border-radius: 60px;
-					width: 40px;
-					height: 40px;
+					width: 30px;
+					height: 30px;
 					padding: 5px;
 					margin-left: 10px;
 				}
@@ -68,7 +68,6 @@
 					width: 40px;
 					height: 40px;
 					cursor: pointer;
-					margin-top: 5px;
 					margin-left: 10px;
 					background-color: rgba(255, 255, 255, 0);
 					border: none;
@@ -82,19 +81,23 @@
 		}
 
 		.itemRightHome {
-			width: 30%;
+			width:30%;
+			background-color: rgba(255, 0, 0, 0);
+			
 
 			.itemUpcomingEventsActive {
 				animation: shake 1s infinite;
 				display: flex;
 				flex-direction: column;
-				width: 90%;
+				width: 95%;
 				background-color: rgb(255, 255, 255);
 				height: 50px;
-				margin-top: 50px;
+				margin-top: 25px;
 				border-radius: 15px;
 				border: 1px solid rgb(218, 218, 218);
 				height: 400px;
+				
+
 				.upBlockUpcomingEvents {
 					height: 60px;
 					background-color: rgba(255, 0, 0, 0);
@@ -140,10 +143,10 @@
 			.itemUpcomingEvents {
 				display: flex;
 				flex-direction: column;
-				width: 90%;
+				width: 95%;
 				background-color: rgb(255, 255, 255);
 				height: 50px;
-				margin-top: 50px;
+				margin-top: 25px;
 				border-radius: 15px;
 				border: 1px solid rgb(218, 218, 218);
 				height: 400px;
@@ -222,9 +225,9 @@
 			.itemVisit {
 				display: flex;
 				flex-direction: column;
-				width: 90%;
+				width: 95%;
 				background-color: rgb(255, 255, 255);
-				margin-top: 20px;
+				margin-top: 25px;
 				border-radius: 15px;
 				border: 1px solid rgb(218, 218, 218);
 				height: 400px;
@@ -271,13 +274,12 @@
 
 	.blockGroupHome {
 		width: 20%;
-		background-color: rgba(0, 255, 255, 0);
 		height: 100vh;
 		.cardGroupContainer {
 			width: 94%;
 			background-color: rgba(255, 0, 0, 0);
 			margin-left: 3%;
-			margin-top: 50px;
+			margin-top: 25px;
 			height: 80vh;
 			border-radius: 15px;
 		}		

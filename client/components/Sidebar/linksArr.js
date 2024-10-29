@@ -1,27 +1,34 @@
 export const linksArr = [
   {
     id: 1, 
+    text: 'Home', 
+    link: '/home', 
+    linkIconActive: '../../assets/img/icons/SidebarIcons/Active/messageActive.png', 
+    linkIconUnActive: '../../assets/img/icons/SidebarIcons/UnActive/message.png'
+  },
+  {
+    id: 2, 
     text: 'Messages', 
     link: '/messages', 
     linkIconActive: '../../assets/img/icons/SidebarIcons/Active/messageActive.png', 
     linkIconUnActive: '../../assets/img/icons/SidebarIcons/UnActive/message.png'
   },
   {
-    id: 2, 
+    id: 3, 
     text: 'Mail', 
     link: '/mail', 
     linkIconActive: '../../assets/img/icons/SidebarIcons/Active/mailActive.png', 
     linkIconUnActive: '../../assets/img/icons/SidebarIcons/UnActive/mail.png'
   },
   {
-    id: 3, 
+    id: 4, 
     text: 'People', 
     link: '/people', 
     linkIconActive: '../../assets/img/icons/SidebarIcons/Active/peopleActive.png', 
     linkIconUnActive: '../../assets/img/icons/SidebarIcons/UnActive/people.png'
   },
   {
-    id: 4, 
+    id: 5, 
     text: 'Profile', 
     link: '/profile', 
     linkIconActive: '../../assets/img/icons/SidebarIcons/Active/profileActive.png', 

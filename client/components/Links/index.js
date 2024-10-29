@@ -10,7 +10,7 @@ export default () => {
       {linksArr.map(k =>
         <Link className='links' to={k.link}>
           <div className='iconLink'>
-            <img className='imgIcon' src={message} />
+            <img className='imgIcon' src={linksArr.linkIconActive} />
             <p className='textLinkMenu'>
               {k.text}
             </p>

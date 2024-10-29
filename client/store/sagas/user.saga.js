@@ -4,7 +4,9 @@ import {
   createUser, 
   createUserAsync,
   changeUserFieldAction,
-  changeUserFieldActionAsync
+  changeUserFieldActionAsync,
+  loginedUserAction,
+  loginedUserActionAsync
 } from '../actions/user.actions.js';
 import UserApi from '../../services/api/user';
 
@@ -18,5 +20,6 @@ function changeUserFieldWorker({ name, value }) {
 
 export function* userSaga() {
   yield takeEvery(createUser, bindAsyncActions(createUserAsync)(UserApi.createUser));
+  yield takeEvery(loginedUserAction, bindAsyncActions(loginedUserActionAsync)(UserApi.loginedUser));
   yield takeEvery(changeUserFieldAction, bindAsyncActions(changeUserFieldActionAsync)(changeUserFieldWorker))
 }

@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom";
 import { connect } from 'react-redux';
 import { createUser, changeUserFieldAction } from '../../store/actions/user.actions';
-import {ToastContainer, toast} from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default connect((s) => ({
   user: s.user,
@@ -23,26 +24,38 @@ export default connect((s) => ({
     const [fullname, setFullname] = React.useState('');
     const [email, setEmail] = React.useState('');
     const [password, setPassword] = React.useState('');
-
+    
     let navigate = useNavigate()
 
     function registerUser() {
       createUser({
         fullname: fullname,
         email: email,
-        password: passwordq
+        password: password
       })
     }
 
     React.useEffect(() => {
       if (isRegitered) {
-        navigate("/");
+        toast('Пользователь создан успешно', {
+          position: "top-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
+
+        navigate('/')
       }
-      if (isRegitered !== null) changeUserFieldAction({name: "registred", value: null})
+      if (isRegitered !== null) changeUserFieldAction({ name: "registred", value: null })
     }, [isRegitered])
 
     return (
       <div className='conatinerReg'>
+
         <div className='itemOne'>
           <div className='blockItemOne'>
             <div className='headerOne'>
@@ -77,6 +90,18 @@ export default connect((s) => ({
               placeholder=""
               onChange={(e) => { setFullname(e.target.value) }}
               value={fullname}
+            />
+            <ToastContainer
+              position="top-right"
+              autoClose={5000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="light"
             />
             <label>Full name</label>
             <span className="focus-border"></span>
@@ -113,19 +138,6 @@ export default connect((s) => ({
             Have an account? <Link className='linkSign' to='/'>Login</Link>
           </p>
         </div>
-        <ToastContainer
-          position="top-right"
-          autoClose={5000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="light"
-        />
-        <ToastContainer />
       </div>
     )
   }

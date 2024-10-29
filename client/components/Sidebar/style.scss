@@ -1,39 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 .containerSidebar {
-  .blockLogo {
-    display: flex;
+  .logoSidebar {
 
-    .logoImg {
-      width: 270px;
-      height: 150px;
-    }
-
-    .menuBtn {
-      background-color: rgba(0, 0, 0, 0);
-      border: none;
-      width: 50px;
-      height: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 47px;
-      cursor: pointer;
-
-      .iconMenuBtn {
-        width: 35px;
-        height: 35px;
-      }
+    .menuLogoImage {
+      margin-left: 10%;
+      margin-top: 30px;
     }
   }
 
   .blockMainMenu {
 
     .headerMainMenu {
-      font-size: 25px;
+      font-size: 18px;
       margin-top: 30px;
       margin-left: 40px;
-      font-family: "Work Sans", sans-serif;
+      font-family: "DM Sans", sans-serif;
       font-optical-sizing: auto;
-      font-weight: 500;
+      font-weight: 400;
       font-style: normal;
     }
   }
@@ -41,12 +25,12 @@
   .blockExplore {
     
     .headerExplore {
-      font-size: 25px;
+      font-size: 18px;
       margin-top: 30px;
       margin-left: 40px;
-      font-family: "Work Sans", sans-serif;
+      font-family: "DM Sans", sans-serif;
       font-optical-sizing: auto;
-      font-weight: 500;
+      font-weight: 400;
       font-style: normal;
     }
   }
@@ -54,26 +38,26 @@
   .innovationBlock {
 
     .headerInnovation {
-      font-size: 25px;
+      font-size: 18px;
       margin-top: 30px;
       margin-left: 40px;
-      font-family: "Work Sans", sans-serif;
+      font-family: "DM Sans", sans-serif;
       font-optical-sizing: auto;
-      font-weight: 500;
+      font-weight: 400;
       font-style: normal;
     }
 
     .editingTheSpace {
-      margin-left: 60px;
-      width: 150px;
-      height: 40px;
+      margin-left: 13%;
+      width: 115px;
+      height: 30px;
       margin-top: 20px;
       background-color: rgba(127, 255, 212, 0);
       border: 1px solid rgb(0, 162, 255);
       cursor: pointer;
       border-radius: 7px;
       color: rgb(0, 0, 0);
-      font-size: 15px;
+      font-size: 12px;
     }
   }
 }
